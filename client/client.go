@@ -1,15 +1,15 @@
 package main
- 
+
 import (
     "context"
     "fmt"
     "log"
- 
+
     pb "github.com/suzumi/helloworld-grpc/pb"
- 
+
     "google.golang.org/grpc"
 )
- 
+
 func main() {
     //sampleなのでwithInsecure
     conn, err := grpc.Dial("127.0.0.1:19003", grpc.WithInsecure())
